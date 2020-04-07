@@ -24,6 +24,7 @@ def text_feature_generator(data, text_column):
     #number of words in raw text data set
     data[text_column+'_raw_word_count']=data[text_column].apply(lambda x: len(str(x).split()))
 
+    return data
 
 
 
